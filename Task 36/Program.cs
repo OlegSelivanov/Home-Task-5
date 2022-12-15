@@ -6,9 +6,11 @@
 [-4, -6, 89, 6] -> 0 */
 
 Console.Clear();
-int size = 4;
+Console.WriteLine("Введите размер массива:  ");
+int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
 FillArrayRandomNumbers(numbers);
+Console.WriteLine("Случайный массив: ");
 PrintArray(numbers);
 
 int sumNumbersEvenIndex = 0;
@@ -17,7 +19,7 @@ for (int i = 1; i < numbers.Length; i += 2)
 {
     sumNumbersEvenIndex += numbers[i];
 }
-Console.Write(sumNumbersEvenIndex);
+Console.Write($"Сумма элементов на нечётных позициях: {sumNumbersEvenIndex}");
 
 void FillArrayRandomNumbers(int[] array)
 {
