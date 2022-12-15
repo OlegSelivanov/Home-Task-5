@@ -5,6 +5,7 @@
 [345, 897, 568, 234] -> 2
 */
 
+Console.Clear();
 Console.WriteLine("Введите размер массива:  ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
